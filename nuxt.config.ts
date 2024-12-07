@@ -9,4 +9,12 @@ export default defineNuxtConfig({
     preference: 'light',
     fallback: 'light',
   },
+  imports:{
+    presets:[
+      {
+        from :"shikiji",
+        imports: ['codeToHtml']
+      }
+    ]
+  }
 })

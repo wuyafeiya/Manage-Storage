@@ -13,8 +13,7 @@ export const useLocalStorageStore = defineStore('mylocalstorage', () => {
     updateStorageData();
  }
   const set = (key: string, value: string) => {
-    console.log('setting', key, value);
-    localStorage.setItem(key, value);
+    localStorage.setItem(key, JSON.stringify(value));
     updateStorageData(); // 更新响应式数据
   };
 
